@@ -1,5 +1,4 @@
 <?php get_template_part('header'); ?>
-
         <section>
 			<div class="row">
 				<div class="col-xs-12">
@@ -10,6 +9,4 @@
 				</div>
 			</div>
 		</section>
-		
-
 <?php get_template_part('footer'); ?>
