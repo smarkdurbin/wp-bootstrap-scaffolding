@@ -170,7 +170,7 @@ function get_first_category_ID() {
 // display posts 3 at a time for main loop
 function three_posts_on_homepage( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 3 );
+        $query->set( 'posts_per_page', 8 );
     }
 }
 add_action( 'pre_get_posts', 'three_posts_on_homepage' );
@@ -179,7 +179,7 @@ add_action( 'pre_get_posts', 'three_posts_on_homepage' );
  * Register our sidebars and widgetized areas.
  *
  */
-function renda_widgets_init() {
+function bootstrap_scaffolding_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => 'Blog right sidebar',
@@ -191,10 +191,7 @@ function renda_widgets_init() {
 	) );
 
 }
-add_action( 'widgets_init', 'renda_widgets_init' );
-
-// use latest menu social icons
-add_filter( 'storm_social_icons_use_latest', '__return_true' );
+add_action( 'widgets_init', 'bootstrap_scaffolding_widgets_init' );
 
 //isblog function
 // https://gist.github.com/wesbos/1189639
