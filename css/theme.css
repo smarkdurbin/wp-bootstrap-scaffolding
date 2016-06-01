@@ -1,0 +1,5 @@
+@import url('utilities.css');
+
+.blog-post-image img {
+    margin-top: 10px;
+}

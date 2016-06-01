@@ -1,0 +1,71 @@
+/*centering*/
+.v-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.h-center {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.h-center.v-center {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*text*/
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-white {
+    color: white;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 10px;
+}
+/*divs*/
+.clearfix.spacer {
+    height: 30px;
+}
+.full-width-xs {
+    padding-left: 0px;
+    padding-right: 0px
+}
+/*lists*/
+.list-unstyled > li > ol,
+.list-unstyled > li > ul {
+    list-style-type: none;
+}
+/*grid stuff*/
+/*no gutters trick*/
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+/*gutter width*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) 
+{ 
+    div[class^="col"]{padding-left:15px; padding-right:15px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) 
+{   
+    div[class^="col"]{padding-left:15px; padding-right:15px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) 
+{   
+    /*default so you don't need this*/
+    div[class^="col"]{padding-left:15px; padding-right:15px;}
+}
