@@ -21,7 +21,7 @@
 	    <div class="container">
 			<header>
 			    <h1 class="header-title">
-			    	<a href="/">
+			    	<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			        <?php
 	                    bloginfo('name');
 	                ?>
